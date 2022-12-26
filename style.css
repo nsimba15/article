@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+}
+.btn{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    padding: 5px;
+    margin-top: 100px;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.principal{
+    width: 716px;
+    height: 270px;
+    display: flex;
+}
+
+.principal .image{
+    box-shadow: 3px 3px 20px 3px rgb(221, 221, 221);
+    width: 700px;
+    height: 270px;
+    cursor: pointer;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+  
+}
+
+.principal .image img{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: 270px;
+
+}
+.principal .content{
+    box-shadow: 3px 3px 20px 3px rgb(221, 221, 221);
+    color: hsl(217, 19%, 35%);
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 40px;
+}
+
+.principal .content .ima{
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.ima .name{
+    line-height: 15px;
+    margin-top: 5px;
+    margin-right: 140px;
+}
+
+.ima .michelle{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.ima .icon{
+    cursor: pointer;
+    text-align: center;
+    border-radius: 100%;
+    background-color: rgb(238, 236, 236);
+    margin-top: 10px;
+    height: 29px;
+    width: 29px;
+}
+
+.ima .icon:hover{
+    background-color: hsl(217, 18%, 32%);
+}
+.icon .icon2{
+    color: white;
+    height: 12px;
+    width: 12px;
+    margin-top: 6px;
+}
+p{
+    color: hsl(212, 23%, 69%);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+main .share{
+    box-shadow: 0px 3px 10px;
+    cursor: pointer;
+    margin-top: 130px;
+    margin-left: 550px;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 230px;
+    height: 50px;
+    position: absolute;
+    justify-content: space-between;
+    color: rgb(131, 127, 127);
+    display: flex;
+    background-color: hsl(217, 19%, 35%) ;
+    border-radius: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.share .transform{
+    position: absolute;
+    margin-left: 74px;
+    margin-top: 25px;
+    transform: rotate(50deg);
+    background-color: hsl(217, 19%, 35%);
+    width: 17px;
+    height: 18px;
+}
+.share .efeito:hover{
+    transition: 1s all;
+    fill: aliceblue;
+    width: 21px;
+    height: 21px;
+}
+a{
+    font-style: none;
+}
+
+.imagem{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    z-index: 5;
+
+}
+
+.overlay{
+    filter: blur(100px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 1, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+@media screen and (max-width: 600px){
+    .principal{
+        margin-top: 100px;
+        width: 500px;
+        height: 700px;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        display: block;
+        flex-wrap: wrap;
+    }
+    .btn{
+        margin-top: 200px;
+    }
+
+    .principal .image{
+        width: 100%;
+    }
+    .ima .name{
+        line-height: 19px;
+        margin-right: 20px;
+    }
+    .content{
+        border-top-left-radius: 1px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        height: 300px;
+        width: 100%;
+        padding: 20px;
+   
+    }
+    .content h2{
+        font-size: medium;
+    }
+
+    .content .share{
+        margin: 100px;
+    }
+    
+
+}
